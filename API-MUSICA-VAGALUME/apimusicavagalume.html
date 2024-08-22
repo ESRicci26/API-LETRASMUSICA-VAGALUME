@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagalume API</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/apimusicavagalume.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+	<h1>API de Letras de Música VAGALUME </h1>
+        <p>Este exemplo está usando <a href='http://api.jquery.com/jQuery.getJSON/'>getJSON</a> para buscar <a href='http://api.vagalume.com.br/docs/letras/'>letras de Vagalume</a>. É um exemplo muito completo 
+        usando jQuery, mas você pode fazer qualquer alteração que quiser para atender às suas necessidades. É importante manter o logotipo e o link do Vagalume na sua página da web.</p>
+        <p>O nome do artista e da música são dinâmicos nesta página, que você pode alterar usando os campos abaixo.</p>
+
+        <label for="artist">Artista:</label>
+        <input type="text" id="artist" placeholder="Digite o nome do artista">
+        <label for="song">Música:</label>
+        <input type="text" id="song" placeholder="Digite o nome da música">
+        <button id="search">Pesquisar</button>
+        <button id="translate">Tradução</button>
+
+        <div id="lyricsContainer">
+            <textarea id="lyrics" rows="10" cols="50" readonly>Gravando Letras...</textarea>
+        </div>
+
+        <a id="vagalumeLink" target="_blank">Mais sobre no Vagalume &raquo;</a>
+
+        <a target="_blank" class="vagalumeLogo" href="http://www.vagalume.com.br/">
+            <img border=0 src="http://www.vagalume.com.br/images/logo_small2.jpg" alt="Vagalume">
+            <br/>Letras de Músicas
+        </a>
+    </div>
+
+    <script src="js/apimusicavagalume.js"></script>
+</body>
+</html>
